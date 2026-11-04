@@ -1,3 +1,6 @@
+//Ejercicio 13
+//Luis Alexander Quishpe Mendoza
+//El programa lee un entero positivo y determina si es capicua, es decir, si se lee igual de derecha a izquierda y de izquierda a derecha
 #include <stdio.h>
 int main()
 {
