@@ -1,3 +1,7 @@
+//TALLER GRUPO 4
+//11/11/2026
+//TRIANGULO DE ASTERISCOS
+
 #include <stdio.h>
 int main()
 {
