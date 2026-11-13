@@ -1,10 +1,11 @@
 \\Christopher Barrera 
+//menu serie y figura
 #include <stdio.h>
 
 int main()
 {
-    int op, n, i, j;                      // op = opcion del menu; n = dato; i, j = contadores de los ciclos
-    int anterior, actual, siguiente;      // variables de Fibonacci
+    int op, n, i, j;                     
+    int anterior, actual, siguiente;      //  Fibonacci
 
     do
     {
@@ -13,11 +14,11 @@ int main()
         printf("2. Serie\n");
         printf("3. Salir\n");
         printf("Ingrese opcion: ");
-        scanf("%d", &op);                 // lee la opcion
+        scanf("%d", &op);                 
 
-        switch (op)                       // elige un caso segun el valor de op
+        switch (op)                      
         {
-            case 1:                       // FIGURA triangulo de asteriscos
+            case 1:                       //  triangulo de asteriscos
                 do
                 {
                     printf("Lineas del triangulo: ");
@@ -32,7 +33,7 @@ int main()
                 }
                 break;                    // sale del switch
 
-            case 2:                       // SERIE Fibonacci
+            case 2:                       //  Fibonacci
                 printf("Cuantos terminos desea (n >= 1): ");
                 scanf("%d", &n);
 
