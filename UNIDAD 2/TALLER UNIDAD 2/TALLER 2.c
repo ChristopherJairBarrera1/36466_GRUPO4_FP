@@ -4,13 +4,11 @@
 
 int main() {
     int opcion;
-
     do
     {
-
         printf("        MENU PRINCIPAL VECTORES Y MATRICES       \n");
-        printf("1.- Vector de enteros (datos quemados)\n");
-        printf("2.- Matriz de flotantes (datos quemados)\n");
+        printf("1.- Vector de enteros \n");
+        printf("2.- Matriz de flotantes \n");
         printf("3.- Salir\n");
         printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
@@ -18,7 +16,7 @@ int main() {
         switch (opcion) {
             case 1: {
                 int cantidad;
-                // los datos quemados (enteros) para llenar lo que pida el usuario
+                // los datos quemados (enteros) para llenar lo que se pida
                 int datos_quemados[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
                 int max_pool = 12;
                 //tamaño maximo del vector
@@ -54,11 +52,12 @@ int main() {
 
                 // Validación de filas
                 do {
-                    printf("\nIngrese el numero de filas (mayor a 0): ");
+                    printf("\nIngrese el numero de filas (n>0): ");
                     scanf("%d", &filas);
                     if (filas <= 0) {
                         printf("Error: Las filas no pueden ser 0 ni negativas.\n");
                     }
+
                 } while (filas <= 0);
 
                 // Validación de columnas
@@ -84,7 +83,7 @@ int main() {
                 printf("\nMatriz generada (%dx%d):\n", filas, columnas);
                 for (int i = 0; i < filas; i++) {
                     for (int j = 0; j < columnas; j++) {
-                        printf("%.2f\t", matriz[i][j]);
+                        printf("%.f\t", matriz[i][j]);
                     }
                     printf("\n");
                 }
