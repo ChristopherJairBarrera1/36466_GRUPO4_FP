@@ -1,5 +1,5 @@
 // Menu de vectores y matrices grupo numero 4
-// Christopher Barrera; Alexander Quishpe; Sara Escalona]; Erick Gualotuña
+// Christopher Barrera; Alexander Quishpe; Sara Escalona]; Erick GualotuÃ±a
 #include <stdio.h>
 
 int main() {
@@ -21,7 +21,7 @@ int main() {
                 // los datos quemados (enteros) para llenar lo que pida el usuario
                 int datos_quemados[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
                 int max_pool = 12;
-                //tamaño maximo del vector
+                //tamaÃ±o maximo del vector
 
 
                 do {
@@ -34,7 +34,7 @@ int main() {
 
                 int vector[cantidad];
 
-                // Llenado con los datos quemados (usa módulo % por si pide más de 10)
+                // Llenado con los datos quemados (usa mÃ³dulo % por si pide mÃ¡s de 10)
                 for (int i = 0; i < cantidad; i++) {
                     vector[i] = datos_quemados[i % max_pool];
                 }
@@ -52,7 +52,7 @@ int main() {
                 int filas, columnas;
                 float valor_base = 1; // Dato base quemado para generar flotantes
 
-                // Validación de filas
+                // ValidaciÃ³n de filas
                 do {
                     printf("\nIngrese el numero de filas (mayor a 0): ");
                     scanf("%d", &filas);
@@ -61,7 +61,7 @@ int main() {
                     }
                 } while (filas <= 0);
 
-                // Validación de columnas
+                // ValidaciÃ³n de columnas
                 do {
                     printf("Ingrese el numero de columnas (mayor a 0): ");
                     scanf("%d", &columnas);
@@ -72,7 +72,7 @@ int main() {
 
                 float matriz[filas][columnas];
 
-                // Llenado con datos flotantes quemados/calculados automáticamente
+                // Llenado con datos flotantes quemados/calculados automÃ¡ticamente
                 for (int i = 0; i < filas; i++) {
                     for (int j = 0; j < columnas; j++) {
                         matriz[i][j] = valor_base;
@@ -92,7 +92,7 @@ int main() {
             }
 
             case 3:
-                printf("\nSaliendo del programa... ¡Hasta luego!\n");
+                printf("\nSaliendo del programa... Â¡Hasta luego!\n");
                 break;
 
             default:
