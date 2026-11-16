@@ -91,11 +91,11 @@ int main() {
             }
 
             case 3:
-                printf("\nSaliendo del programa... ¡Hasta luego!\n");
+                printf("\nSaliendo del programa.\n");
                 break;
 
             default:
-                printf("\nOpcion no valida. Por favor elija entre 1 y 3.\n");
+                printf("\nOpcion no valida.\n");
                 break;
         }
 
