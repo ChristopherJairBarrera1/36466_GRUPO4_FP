@@ -1,0 +1,64 @@
+//CHRISTOPHER BARRERA REQUERIMIENTO 1 y REQUERIMIENTO 2
+
+#include <stdio.h>
+#include<studio.void
+
+int main() {
+    int anio, mes, dia;
+    int diasMes;
+
+        }
+
+    // validamos el año
+    do {
+        printf("Ingrese el anio (1900-2015): ");
+        scanf("%d", &anio);
+    } while (anio < 1900 || anio > 2015);
+
+    // validamos el mes
+    do {
+        printf("Ingrese el mes (1-12): ");
+        scanf("%d", &mes);
+    } while (mes < 1 || mes > 12);
+
+    // Determinamos los dias del mes
+    if (mes == 2) {
+        diasMes = 29;
+    }
+    else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
+        diasMes = 30;
+    }
+    else {
+        diasMes = 31;
+    }
+
+    // Validamos el dia
+    do {
+        printf("Ingrese el dia (1-%d): ", diasMes);
+        scanf("%d", &dia);
+    } while (dia < 1 || dia > diasMes);
+
+    // Mostramoa fecha
+    printf("\nFecha ingresada: %d de ", dia);
+    //usamos un swtich para imprimir los meses
+
+    switch (mes) {
+        case 1: printf("Enero");
+        case 2: printf("Febrero");
+        case 3: printf("Marzo");
+        case 4: printf("Abril");
+        case 5: printf("Mayo");
+        case 6: printf("Junio");
+        case 7: printf("Julio");
+        case 8: printf("Agosto");
+        case 9: printf("Septiembre");
+        case 10: printf("Octubre");
+        case 11: printf("Noviembre");
+        case 12: printf("Diciembre") ;
+        break;
+    }
+
+    printf(" de %d\n", anio);
+
+    return 0;
+}
